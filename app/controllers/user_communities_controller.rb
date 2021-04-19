@@ -3,24 +3,24 @@ class UserCommunitiesController < ApplicationController
     def index
         @user_communities = UserCommunity.all
 
-        render json: user_communities, include: :users, :communities
+        render json: @user_communities, includes: [:users, :communities]
     end
 
     def show
         @user_community = UserCommunity.find(params[:id])
 
-        render json: @user_community, include: :users, :communities
+        render json: @user_community, includes: [:users, :communities]
     end
 
     def create
         @user = User.find_by(id: user_community_params[:user_id])
         @community = Community.find_by(id: user_community_params[:community_id])
 
-        if @user and @community
+        if @user && @community
             @user_community = UserCommunity.create(user_community_params)
             render json: @user_community, message: "Created new User Community!"
         else
-            render json: message: "Unable to create UserCommunity, please review."
+            render json: "Unable to create UserCommunity, please review."
         end
     end
 
