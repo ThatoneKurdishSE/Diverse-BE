@@ -18,7 +18,7 @@ class CommunitiesController < ApplicationController
             @community.save
             render json: @community, message: "Community Created!"
         else
-            render json: @community.errors.full_messages, status: :unprocessable_entity
+            render json: { errors: @community.errors.full_messages }, status: :unprocessable_entity
         end
     end
 
