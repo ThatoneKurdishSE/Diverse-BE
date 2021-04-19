@@ -9,7 +9,7 @@ class CommunitiesController < ApplicationController
     def show
         @community = Community.find(params[:id])
 
-        render json: @community
+        render json: @community, include: :users
     end
 
     def create
