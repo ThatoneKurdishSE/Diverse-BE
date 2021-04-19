@@ -13,9 +13,13 @@ class CommunitiesController < ApplicationController
     end
 
     def create
-        @community = Community.create(community_params)
-
-        render json: @community, message: "Community Created!"
+        @community = Community.new(community_params)
+        if @community.valid?
+            @community.save
+            render json: @community, message: "Community Created!"
+        else
+            render json: { errors: @community.errors.full_messages }, status: :unprocessable_entity
+        end
     end
 
     private
