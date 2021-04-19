@@ -17,6 +17,7 @@ class UserCommunitiesController < ApplicationController
         @community = Community.find_by(id: user_community_params[:community_id])
 
         if @user && @community
+            byebug
             @user_community = UserCommunity.create(user_community_params)
             render json: @user_community, message: "Created new User Community!"
         else
