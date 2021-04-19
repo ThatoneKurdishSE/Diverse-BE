@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     def show
         @user = User.find(params[:id])
 
-        render json: @user
+        render json: @user, includes: :communities
     end
 
     def create
@@ -22,6 +22,13 @@ class UsersController < ApplicationController
 
     def user_params
         params.require(:user).permit(:name, :email, :password)
+    end
+    
+    def destroy
+        @user = User.find(params[:id])
+        @user.destroy
+
+        render json: "Destroyed #{@user}"
     end
 
 end
