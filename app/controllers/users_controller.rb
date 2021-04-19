@@ -22,10 +22,14 @@ class UsersController < ApplicationController
         end 
     end
 
+    def login
+        @user = User.find_by(username:)
+    end
+
     private
 
     def user_params
-        params.require(:user).permit(:name, :age, :email, :password)
+        params.require(:user).permit(:username, :age, :email, :password)
     end
     
     def destroy
