@@ -37,5 +37,4 @@ class UserCommunitiesController < ApplicationController
         render json: "Destroyed #{@user_community}"
     end
 
-
 end
