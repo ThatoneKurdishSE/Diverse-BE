@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+    skip_before_action :authorized, only: [:create, :login, :index, :show]
 
     def index 
         @users = User.all
@@ -10,6 +11,10 @@ class UsersController < ApplicationController
         @user = User.new(params[:id])
 
         render json: @user, includes: :communities
+    end
+
+    def profile
+        render json: @user
     end
 
     def create
