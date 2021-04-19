@@ -17,7 +17,6 @@ class UserCommunitiesController < ApplicationController
         @community = Community.find_by(id: user_community_params[:community_id])
 
         if @user && @community
-            byebug
             @user_community = UserCommunity.create(user_community_params)
             render json: @user_community, message: "Created new User Community!"
         else
@@ -30,5 +29,13 @@ class UserCommunitiesController < ApplicationController
     def user_community_params
         params.require(:user_community).permit :user_id, :community_id
     end
+
+    def destroy
+        @user_community = UserCommunity.find(params[:id])
+        @user_community.destroy
+
+        render json: "Destroyed #{@user_community}"
+    end
+
 
 end

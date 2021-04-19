@@ -24,4 +24,11 @@ class CommunitiesController < ApplicationController
         params.require(:community).permit(:name, :location, :description)
     end
 
+    def destroy
+        @community = Community.find(params[:id])
+        @community.destroy
+
+        render json: "Destroyed #{@community}"
+    end
+
 end
