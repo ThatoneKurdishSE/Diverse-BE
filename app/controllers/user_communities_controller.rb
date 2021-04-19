@@ -1,0 +1,2 @@
+class UserCommunitiesController < ApplicationController
+end
