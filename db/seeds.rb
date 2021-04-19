@@ -2,11 +2,11 @@ UserCommunity.destroy_all
 User.destroy_all
 Community.destroy_all
 
-@jack = User.create name: "Jack", email: "jack@gjeffgolden.com", password: "password"
-@ryan = User.create name: "Ryan", email: "ryan@gjeffgolden.com", password: "password"
-@stephen = User.create name: "Stephen", email: "stephen@gjeffgolden.com", password: "password"
-@raz = User.create name: "Razio", email: "raz@gjeffgolden.com", password: "password"
-@jeff = User.create name: "Jeff", email: "jeff@gjeffgolden.com", password: "password"
+@jack = User.create name: "Jack", age: 27, email: "jack@gjeffgolden.com", password: "password"
+@ryan = User.create name: "Ryan", age: 73, email: "ryan@gjeffgolden.com", password: "password"
+@stephen = User.create name: "Stephen", age: 197, email: "stephen@gjeffgolden.com", password: "password"
+@raz = User.create name: "Razio", age: 19, email: "raz@gjeffgolden.com", password: "password"
+@jeff = User.create name: "Jeff", age: 999, email: "jeff@gjeffgolden.com", password: "password"
 
 @hiking = Community.create name: "Hiking", location: "Denver, CO", description: "A small community of hikers around Denver"
 @concerts = Community.create name: "Concerts", location: "Los Angeles, CA", description: "A medium-sized community of concert-goers around Los Angeles"
