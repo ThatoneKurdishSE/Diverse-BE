@@ -1,8 +1,11 @@
 class CommunitiesController < ApplicationController
-  def index
-    @communities = Community.all
 
-    render json: @communities
+  def all_communities
+    Community.all
+  end
+
+  def index
+    render json: all_communities
   end
 
   def show
@@ -19,6 +22,14 @@ class CommunitiesController < ApplicationController
     else
       render json: { errors: @community.errors.full_messages }, status: :unprocessable_entity
     end
+  end
+
+  def search
+    search_name = params[:search_criteria].downcase
+    
+    @search_results = all_communities.filter { &:name.downcase.include? search_name }
+
+    render json: @search_results
   end
 
   private
