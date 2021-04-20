@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   post "/users", to: "users#create"
   post "/login", to: "users#login"
   get "/profile", to: 'users#profile'
-  get "/search", to: 'communities#search'
+  get "/community_search", to: 'communities#search'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

@@ -27,9 +27,12 @@ class CommunitiesController < ApplicationController
   def search
     search_name = params[:search_criteria].downcase
     
-    @search_results = all_communities.filter { &:name.downcase.include? search_name }
-
-    render json: @search_results
+    @search_results = all_communities.filter { |community| community.name.downcase.include? search_name }
+    if @search_results.length > 0
+      render json: @search_results
+    else
+      render json: @all_communities, message: "No results found, please try searching something else."
+    end
   end
 
   private

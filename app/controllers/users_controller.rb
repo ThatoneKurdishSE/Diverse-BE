@@ -3,10 +3,10 @@ class UsersController < ApplicationController
   skip_before_action :authorized, only: [:create, :login, :index, :show]
 
   def login
-    @user = User.find_by({ name: params[:name] })
+    @user = User.find_by({ username: login_params[:username] })
     if !@user
       render json: { error: 'Incorrect User/Password' }, status: :unauthorized
-    elsif !@user.authenticate(params[:password])
+    elsif !@user.authenticate(login_params[:password])
       render json: { error: 'Incorrect User/Password' }, status: :unauthorized
     else
       payload = {
@@ -45,6 +45,10 @@ class UsersController < ApplicationController
   end
 
   private
+
+  def login_params
+    params.require(:user).permit(:username, :password)
+  end
 
   def user_params
     params.require(:user).permit(:username, :age, :email, :password)
