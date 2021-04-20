@@ -5,6 +5,11 @@ class UsersController < ApplicationController
     User.all
   end
 
+  def find_by_id
+    User.find(params[:id])
+  end
+
+
   def login
     @user = User.find_by({ username: login_params[:username] })
     if !@user
@@ -26,9 +31,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.new(params[:id])
-
-    render json: @user, includes: :communities
+    render json: find_by_id, includes: :communities
   end
 
   def create
@@ -56,6 +59,9 @@ class UsersController < ApplicationController
     end
   end
 
+  def user_communities
+    @user = find_by_id
+    render json: @user.communities
   private
 
   def login_params
@@ -67,7 +73,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user = User.find(params[:id])
+    @user = find_by_id
     @user.destroy
 
     render json: "Destroyed #{@user}"
