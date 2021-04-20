@@ -3,6 +3,6 @@ class Community < ApplicationRecord
     validates :location, presence: true
     validates :description, presence: true
 
+    has_many :user_communities
     has_many :users, through: :user_communities
-    has_many :users
 end
