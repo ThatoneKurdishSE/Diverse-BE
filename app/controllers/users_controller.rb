@@ -40,6 +40,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def profile
+    render json: @user
+  end
+
   private
 
   def user_params
