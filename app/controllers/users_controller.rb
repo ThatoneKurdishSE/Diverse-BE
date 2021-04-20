@@ -48,20 +48,29 @@ class UsersController < ApplicationController
     render json: @user
   end
 
-  def search
+  def search_by_username
     search_username = params[:search_criteria].downcase
-    
-    @search_results = all_users.filter { |user| user.username.downcase.include? search_username }
-    if @search_results.length > 0
-      render json: @search_results
+    User.where( 'username LIKE ?', "%#{search_username}%")
+  end
+
+  def search
+    if params[:search_criteria]
+      @search_results = search_by_username
+      if @search_results.length > 0
+        render json: @search_results
+      else
+        render json: all_users, message: "No results found, please try searching something else."
+      end
     else
-      render json: all_users, message: "No results found, please try searching something else."
+      render json: all_users
     end
   end
 
   def user_communities
     @user = find_by_id
     render json: @user.communities
+  end 
+
   private
 
   def login_params

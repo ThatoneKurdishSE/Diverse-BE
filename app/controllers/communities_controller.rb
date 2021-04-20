@@ -28,15 +28,19 @@ class CommunitiesController < ApplicationController
 
   def search_by_name
     search_name = params[:search_criteria].downcase
-    all_communities.filter { |community| community.name.downcase.include? search_name }
+    Communities.where( 'name LIKE ?', "%#{search_name}%" )
   end
 
   def search
-    @search_results = search_by_name
-    if @search_results.length > 0
-      render json: @search_results
+    if params[:serach_criteria]
+      @search_results = search_by_name
+      if @search_results.length > 0
+        render json: @search_results
+      else
+        render json: all_communities, message: "No results found, please try searching something else."
+      end
     else
-      render json: all_communities, message: "No results found, please try searching something else."
+      render json: all_communities
     end
   end
 
