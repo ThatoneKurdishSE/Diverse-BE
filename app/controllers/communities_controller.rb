@@ -4,14 +4,16 @@ class CommunitiesController < ApplicationController
     Community.all
   end
 
+  def find_by_id
+    Community.find(params[:id])
+  end
+
   def index
     render json: all_communities
   end
 
   def show
-    @community = Community.find(params[:id])
-
-    render json: @community, includes: :users
+    render json: find_by_id, includes: :users
   end
 
   def create
@@ -24,15 +26,23 @@ class CommunitiesController < ApplicationController
     end
   end
 
-  def search
+  def search_by_name
     search_name = params[:search_criteria].downcase
-    
-    @search_results = all_communities.filter { |community| community.name.downcase.include? search_name }
+    all_communities.filter { |community| community.name.downcase.include? search_name }
+  end
+
+  def search
+    @search_results = search_by_name
     if @search_results.length > 0
       render json: @search_results
     else
       render json: all_communities, message: "No results found, please try searching something else."
     end
+  end
+
+  def community_members
+    @community = find_by_id
+    render json: @community.users
   end
 
   private
@@ -42,9 +52,8 @@ class CommunitiesController < ApplicationController
   end
 
   def destroy
-    @community = Community.find(params[:id])
+    @community = find_by_id
     @community.destroy
-
     render json: "Destroyed #{@community}"
   end
 end
