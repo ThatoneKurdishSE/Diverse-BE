@@ -28,7 +28,7 @@ class CommunitiesController < ApplicationController
 
   def search_by_name
     search_name = params[:search_criteria].downcase
-    Communities.where( 'name LIKE ?', "%#{search_name}%" )
+    Community.where( 'name LIKE ?', "%#{search_name}%" )
   end
 
   def search
