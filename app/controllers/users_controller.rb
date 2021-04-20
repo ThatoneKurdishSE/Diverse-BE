@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
-
   skip_before_action :authorized, only: [:create, :login, :index, :show]
+
+  def all_users
+    User.all
+  end
 
   def login
     @user = User.find_by({ username: login_params[:username] })
@@ -19,9 +22,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.all
-
-    render json: @users
+    render json: all_users
   end
 
   def show
@@ -42,6 +43,17 @@ class UsersController < ApplicationController
 
   def profile
     render json: @user
+  end
+
+  def search
+    search_username = params[:search_criteria].downcase
+    
+    @search_results = all_users.filter { |user| user.username.downcase.include? search_username }
+    if @search_results.length > 0
+      render json: @search_results
+    else
+      render json: all_users, message: "No results found, please try searching something else."
+    end
   end
 
   private

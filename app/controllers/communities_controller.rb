@@ -31,7 +31,7 @@ class CommunitiesController < ApplicationController
     if @search_results.length > 0
       render json: @search_results
     else
-      render json: @all_communities, message: "No results found, please try searching something else."
+      render json: all_communities, message: "No results found, please try searching something else."
     end
   end
 
