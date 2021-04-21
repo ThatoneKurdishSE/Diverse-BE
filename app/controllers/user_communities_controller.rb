@@ -34,8 +34,8 @@ class UserCommunitiesController < ApplicationController
   end
 
   def create
-    @user = User.find_by(id: user_community_params[:user_id])
-    @community = Community.find_by(id: user_community_params[:community_id])
+    @user = User.find(user_community_params[:user_id])
+    @community = Community.find(user_community_params[:community_id])
 
     if @user && @community
       @user_community = UserCommunity.new(user_community_params)
@@ -47,11 +47,12 @@ class UserCommunitiesController < ApplicationController
       end
     else
       if @user
-        render json: { message: "User #{@user.username} passed successfully; Unable to locate referenced community."}
+        render json: { message: "User '#{@user.username}' passed successfully; Unable to locate referenced community."}
       elsif @community
-        render json: { message: "Community ##{@community.name} passed successfully; Unable to locate referenced user."}
+        render json: { message: "Community '##{@community.name}' passed successfully; Unable to locate referenced user."}
       else
         render json: { message: "Neither user nor community were passed successfully, please review."}
+      end
     end
   end
 

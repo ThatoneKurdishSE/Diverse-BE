@@ -26,12 +26,25 @@ class CommentsController < ApplicationController
     end
 
     def create
-        @comment = Comment.new(comment_params)
-        if @comment.valid?
-            @comment.save
-            render json: @comment, message: "#{get_user.username} commented on #{get_post.title}."
+        @user = User.find(comment_params[:user_id])
+        @post = Community.find(comment_params[:post_id])
+
+        if @user && @post
+            @comment = Comment.new(comment_params)
+            if @comment.valid?
+                @comment.save
+                render json: @comment, message: "#{get_user.username} commented on #{get_post.title}."
+            else
+                render json: { errors: @comment.errors.full_messages }, status: :unprocessable_entity
+            end
         else
-            render json: { errors: @comment.errors.full_messages }, status: :unprocessable_entity
+            if @user
+                render json: { message: "User '#{@user.username}' passed successfully; Unable to locate referenced post."}
+            elsif @post
+                render json: { message: "Post '#{@post.title}' passed successfully; Unable to locate referenced user."}
+            else
+                render json: { message: "Neither user nor post were passed successfully, please review."}
+            end
         end
     end
 

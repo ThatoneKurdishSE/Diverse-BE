@@ -26,12 +26,25 @@ class PostLikesController < ApplicationController
     end
 
     def create
-        @post_like = PostLike.new(post_like_params)
-        if @post_like.valid?
-            @post_like.save
-            render json: @post_like, message: "#{get_user.username} liked #{get_post.title}."
+        @user = User.find(post_like_params[:user_id])
+        @post = Community.find(post_like_params[:post_id])
+
+        if @user && @post
+            @post_like = PostLike.new(post_like_params)
+            if @post_like.valid?
+                @post_like.save
+                render json: @post_like, message: "#{get_user.username} liked #{get_post.title}."
+            else
+                render json: { errors: @post_like.errors.full_messages }, status: :unprocessable_entity
+            end
         else
-            render json: { errors: @post_like.errors.full_messages }, status: :unprocessable_entity
+            if @user
+                render json: { message: "User '#{@user.username}' passed successfully; Unable to locate referenced post."}
+            elsif @post
+                render json: { message: "Post '#{@post.title}' passed successfully; Unable to locate referenced user."}
+            else
+                render json: { message: "Neither user nor post were passed successfully, please review."}
+            end
         end
     end
 

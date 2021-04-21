@@ -22,12 +22,17 @@ class PostTagsController < ApplicationController
     end
 
     def create
-        @post_tag = PostTag.new(post_tag_params)
-        if @post_tag.valid?
-            @post_tag.save
-            render json: @post_tag, message: "##{@post_tag.tag_name} added to #{get_post.title}."
+        @post = Post.find(post_tag_params[:post_id])
+        if @post
+            @post_tag = PostTag.new(post_tag_params)
+            if @post_tag.valid?
+                @post_tag.save
+                render json: @post_tag, message: "##{@post_tag.tag_name} added to #{get_post.title}."
+            else
+                render json: { errors: @post_tag.errors.full_messages }, status: :unprocessable_entity
+            end
         else
-            render json: { errors: @post_tag.errors.full_messages }, status: :unprocessable_entity
+            render json: { message: "Post was not passed successfully, unable to add post tag."}
         end
     end
 

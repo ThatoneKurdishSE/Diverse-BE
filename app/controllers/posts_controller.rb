@@ -34,12 +34,26 @@ class PostsController < ApplicationController
     end
 
     def create
-        @post = Post.new(post_params)
-        if @post.valid?
-            @post.save
-            render json: @post, message: "Post created by #{get_user.username} in #{get_community.name}!"
+        @user = User.find(post_params[:user_id])
+        @community = Community.find(post_params[:community_id])
+
+        if @user && @community
+            @post = Post.new(post_params)
+            if @post.valid?
+                @post.save
+                render json: @post, message: "Post created by #{get_user.username} in #{get_community.name}!"
+            else
+                render json: { errors: @post.errors.full_messages }, status: :unprocessable_entity
+            end
         else
-            render json: { errors: @post.errors.full_messages }, status: :unprocessable_entity
+            if @user
+              render json: { message: "User '#{@user.username}' passed successfully; Unable to locate referenced community."}
+            elsif @community
+              render json: { message: "Community '##{@community.name}' passed successfully; Unable to locate referenced user."}
+            else
+              render json: { message: "Neither user nor community were passed successfully, please review."}
+            end
+        end
     end
 
     def search_by_title
