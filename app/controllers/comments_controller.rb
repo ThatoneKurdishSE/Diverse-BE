@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
     end
 
     def show
-        render json: find_by_id
+        render json: find_by_id, includes: [:user, :post]
     end
 
     def create
