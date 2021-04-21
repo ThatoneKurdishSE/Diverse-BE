@@ -6,5 +6,10 @@ class User < ApplicationRecord
 
     has_secure_password
     has_many :user_communities
+    has_many :community_owners
+    has_many :posts
+    has_many :comments
+    has_many :post_likes
     has_many :communities, through: :user_communities
+    has_many :communities, through: :community_owners
 end
