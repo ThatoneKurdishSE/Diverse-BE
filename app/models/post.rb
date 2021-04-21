@@ -3,7 +3,7 @@ class Post < ApplicationRecord
     validates :content, length: { minimum: 1, maximum: 750 }
     validates :ip_address, presence: true
 
-    belongs_to :users
-    belongs_to :communities
+    belongs_to :user
+    belongs_to :community
     t.timestamps
 end

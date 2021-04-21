@@ -30,7 +30,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    render json: find_by_id, includes: :communities
+    render json: find_by_id, includes: [ :communities, :posts, :comments, :likes]
   end
 
   def create
