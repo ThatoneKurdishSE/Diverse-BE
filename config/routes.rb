@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :community_owners
+  resources :comments, only: [:show, :create, :destroy]
+  resources :post_likes, only: [:show, :create, :destroy]
+  resources :post_tags, only: [:show, :create, :destroy]
+  resources :posts
   resources :user_communities
   resources :communities
   resources :users

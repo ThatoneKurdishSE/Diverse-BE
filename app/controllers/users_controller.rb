@@ -9,13 +9,16 @@ class UsersController < ApplicationController
     User.find(params[:id])
   end
 
+  def unable_to_locate_user
+    render json: { message: "Unable to locate referenced user."}
+  end
 
   def login
     @user = User.find_by({ username: login_params[:username] })
     if !@user
-      render json: { error: 'Incorrect User/Password' }, status: :unauthorized
+      render json: { error: 'Incorrect Username/Password' }, status: :unauthorized
     elsif !@user.authenticate(login_params[:password])
-      render json: { error: 'Incorrect User/Password' }, status: :unauthorized
+      render json: { error: 'Incorrect Username/Password' }, status: :unauthorized
     else
       payload = {
         user_id: @user.id
@@ -31,14 +34,19 @@ class UsersController < ApplicationController
   end
 
   def show
-    render json: find_by_id, includes: :communities
+    @user = find_by_id
+    if @user
+      render json: @user, includes: [ :communities, :posts, :comments, :likes]
+    else
+      unable_to_locate_user
+    end
   end
 
   def create
     @user = User.new(user_params)
     if @user.valid?
       @user.save
-      render json: @user, message: 'User Created!'
+      render json: @user, message: "User #{@user.username} created!"
     else
       render json: { errors: @user.errors.full_messages }, status: :unprocessable_entity
     end
@@ -68,7 +76,11 @@ class UsersController < ApplicationController
 
   def user_communities
     @user = find_by_id
-    render json: @user.communities
+    if @user
+      render json: @user.communities
+    else
+      unable_to_locate_user
+    end
   end 
 
   private
@@ -83,8 +95,11 @@ class UsersController < ApplicationController
 
   def destroy
     @user = find_by_id
-    @user.destroy
-
-    render json: "Destroyed #{@user}"
+    if @user
+      @user.destroy
+      render json: "Deleted #{@user.username}."
+    else
+      unable_to_locate_user
+    end
   end
 end

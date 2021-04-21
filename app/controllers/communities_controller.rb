@@ -12,15 +12,24 @@ class CommunitiesController < ApplicationController
     render json: all_communities
   end
 
+  def unable_to_locate_community
+    render json: { message: "Unable to locate referenced community."}
+  end
+
   def show
-    render json: find_by_id, includes: :users
+    @community = find_by_id
+    if @community
+      render json: @community, includes: :users
+    else
+      unable_to_locate_community
+    end
   end
 
   def create
     @community = Community.new(community_params)
     if @community.valid?
       @community.save
-      render json: @community, message: 'Community Created!'
+      render json: @community, message: "##{@community.name} created!"
     else
       render json: { errors: @community.errors.full_messages }, status: :unprocessable_entity
     end
@@ -46,7 +55,11 @@ class CommunitiesController < ApplicationController
 
   def community_members
     @community = find_by_id
-    render json: @community.users
+    if @community
+      render json: @community.users
+    else
+      unable_to_locate_community
+    end
   end
 
   private
@@ -57,7 +70,11 @@ class CommunitiesController < ApplicationController
 
   def destroy
     @community = find_by_id
-    @community.destroy
-    render json: "Destroyed #{@community}"
+    if @community
+      @community.destroy
+      render json: "Deleted ##{@community.name}"
+    else
+      unable_to_locate_community
+    end
   end
 end
