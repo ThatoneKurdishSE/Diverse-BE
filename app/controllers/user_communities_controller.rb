@@ -1,14 +1,36 @@
 class UserCommunitiesController < ApplicationController
-  def index
-    @user_communities = UserCommunity.all
 
+  def all_user_communities
+    UserCommunity.all
+  end
+
+  def find_by_id
+    UserCommunity.find(params[:id])
+  end
+
+  def get_user
+    User.find(@user_community[:user_id])
+  end
+
+  def get_community
+    Community.find(@user_community[:community_id])
+  end
+
+  def unable_to_locate_user_community
+    render json: { message: "Unable to locate referenced user community."}
+  end
+
+  def index
+    @user_communities = all_user_communities
     render json: @user_communities, includes: %i[users communities]
   end
 
   def show
-    @user_community = UserCommunity.find(params[:id])
-
-    render json: @user_community, includes: %i[users communities]
+    @user_community = find_by_id
+    if @user_community
+      render json: @user_community, includes: %i[users communities]
+    else
+      unable_to_locate_user_community
   end
 
   def create
@@ -16,10 +38,20 @@ class UserCommunitiesController < ApplicationController
     @community = Community.find_by(id: user_community_params[:community_id])
 
     if @user && @community
-      @user_community = UserCommunity.create(user_community_params)
-      render json: @user_community, message: "#{@user.username} became a member of ##{@community.name}"
+      @user_community = UserCommunity.new(user_community_params)
+      if @user_community.valid?
+        @user_community.save
+        render json: @user_community, message: "#{@user.username} became a member of ##{@community.name}."
+      else
+        render json: { errors: @user_community.errors.full_messages }, status: :unprocessable_entity
+      end
     else
-      render json: 'Unable to create UserCommunity, please review.'
+      if @user
+        render json: { message: "User #{@user.username} passed successfully; Unable to locate referenced community."}
+      elsif @community
+        render json: { message: "Community ##{@community.name} passed successfully; Unable to locate referenced user."}
+      else
+        render json: { message: "Neither user nor community were passed successfully, please review."}
     end
   end
 
@@ -30,9 +62,12 @@ class UserCommunitiesController < ApplicationController
   end
 
   def destroy
-    @user_community = UserCommunity.find(params[:id])
-    @user_community.destroy
-
-    render json: "Destroyed #{@user_community}"
+    @user_community = find_by_id
+    if @user_community
+      @user_community.destroy
+      render json: "Removed #{get_user.username} from ##{get_community.name}."
+    else
+      unable_to_locate_user_community
+    end
   end
 end

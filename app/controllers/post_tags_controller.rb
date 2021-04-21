@@ -8,15 +8,24 @@ class PostTagsController < ApplicationController
         Post.find(@post_tag[:post_id])
     end
 
+    def unable_to_locate_post_tag
+        render json: { message: "Unable to locate referenced post tag."}
+    end
+
     def show
-        render json: find_by_id, includes: [:post]
+        @post_tag = find_by_id
+        if @post_tag
+            render json: find_by_id, includes: [:post]
+        else
+            unable_to_locate_post_tag
+        end
     end
 
     def create
         @post_tag = PostTag.new(post_tag_params)
         if @post_tag.valid?
             @post_tag.save
-            render json: @post_tag, message: "##{@post_tag.tag_name} added to #{get_post.title}"
+            render json: @post_tag, message: "##{@post_tag.tag_name} added to #{get_post.title}."
         else
             render json: { errors: @post_tag.errors.full_messages }, status: :unprocessable_entity
         end
@@ -30,7 +39,11 @@ class PostTagsController < ApplicationController
 
     def destroy
         @post_tag = find_by_id
-        @post_tag.destroy
-        render json: { message: "##{@post_tag.tag_name} removed from #{get_post.title}" }
+        if @post_tag
+            @post_tag.destroy
+            render json: { message: "##{@post_tag.tag_name} removed from #{get_post.title}." }
+        else
+            unable_to_locate_post_tag
+        end
     end
 end

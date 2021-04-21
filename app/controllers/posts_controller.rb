@@ -16,12 +16,21 @@ class PostsController < ApplicationController
         Community.find(@post[:community_id])
     end
 
+    def unable_to_locate_post
+        render json: { message: "Unable to located referenced post."}
+    end
+
     def index
         render json: all_posts, includes: [:communities, :users, :post_tags, :post_comments, :post_likes]
     end
 
     def show
-        render json: find_by_id, includes: [:community, :user, :post_tags, :post_comments, :post_likes]
+        @post = find_by_id
+        if @post
+            render json: @post, includes: [:community, :user, :post_tags, :post_comments, :post_likes]
+        else
+            unable_to_locate_post
+        end
     end
 
     def create
@@ -60,8 +69,11 @@ class PostsController < ApplicationController
     # Only post_users or community owners should be able to delete a post
     def destroy
         @post = find_by_id
-        @post.destroy
-
-        render json: "Deleted #{@post}"
+        if @post
+            @post.destroy
+            render json: "Deleted #{get_user.username}'s '#{@post.title}' from ##{get_community.name}."
+        else
+            unable_to_locate_post
+        end
     end
 end

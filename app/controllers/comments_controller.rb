@@ -12,15 +12,24 @@ class CommentsController < ApplicationController
         Post.find(@comment[:post_id])
     end
 
+    def unable_to_locate_comment
+        render json: { message: "Unable to locate referenced comment."}
+    end
+
     def show
-        render json: find_by_id, includes: [:user, :post]
+        @comment = find_by_id
+        if @comment
+            render json: @comment, includes: [:user, :post]
+        else
+            unable_to_locate_comment
+        end
     end
 
     def create
         @comment = Comment.new(comment_params)
         if @comment.valid?
             @comment.save
-            render json: @comment, message: "#{get_user.username} commented on #{get_post.title}"
+            render json: @comment, message: "#{get_user.username} commented on #{get_post.title}."
         else
             render json: { errors: @comment.errors.full_messages }, status: :unprocessable_entity
         end
@@ -34,7 +43,11 @@ class CommentsController < ApplicationController
 
     def destroy
         @comment = find_by_id
-        @comment.destroy
-        render json: { message: "#{get_user.username} deleted comment from #{get_post.title}" }
+        if @comment
+            @comment.destroy
+            render json: { message: "#{get_user.username} deleted comment from #{get_post.title}." }
+        else
+            unable_to_locate_comment
+        end
     end
 end
