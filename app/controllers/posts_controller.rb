@@ -25,6 +25,24 @@ class PostsController < ApplicationController
             render json: { errors: @post.errors.full_messages }, status: :unprocessable_entity
     end
 
+    def search_by_title
+        search_title = params[:search_criteria].downcase
+        User.where( 'username LIKE ?', "%#{search_title}%")
+    end
+    
+    def search
+        if params[:search_criteria]
+            @search_results = search_by_title
+            if @search_results.length > 0
+                render json: @search_results
+            else
+                render json: all_posts, message: "No results found, please try searching something else."
+            end
+        else
+            render json: all_posts
+        end
+    end
+
     private
 
     def post_params
