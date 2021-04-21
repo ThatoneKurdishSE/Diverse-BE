@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_21_174555) do
+ActiveRecord::Schema.define(version: 2021_04_21_175811) do
 
   create_table "communities", force: :cascade do |t|
     t.string "name"
@@ -18,6 +18,14 @@ ActiveRecord::Schema.define(version: 2021_04_21_174555) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "post_tags", force: :cascade do |t|
+    t.string "tag_name"
+    t.integer "posts_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["posts_id"], name: "index_post_tags_on_posts_id"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -50,6 +58,7 @@ ActiveRecord::Schema.define(version: 2021_04_21_174555) do
     t.integer "age"
   end
 
+  add_foreign_key "post_tags", "posts", column: "posts_id"
   add_foreign_key "posts", "communities", column: "communities_id"
   add_foreign_key "posts", "users", column: "users_id"
   add_foreign_key "user_communities", "communities"
