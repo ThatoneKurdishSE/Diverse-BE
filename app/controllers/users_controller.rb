@@ -9,7 +9,6 @@ class UsersController < ApplicationController
     User.find(params[:id])
   end
 
-
   def login
     @user = User.find_by({ username: login_params[:username] })
     if !@user
