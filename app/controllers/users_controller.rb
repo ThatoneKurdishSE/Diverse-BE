@@ -12,9 +12,9 @@ class UsersController < ApplicationController
   def login
     @user = User.find_by({ username: login_params[:username] })
     if !@user
-      render json: { error: 'Incorrect User/Password' }, status: :unauthorized
+      render json: { error: 'Incorrect Username/Password' }, status: :unauthorized
     elsif !@user.authenticate(login_params[:password])
-      render json: { error: 'Incorrect User/Password' }, status: :unauthorized
+      render json: { error: 'Incorrect Username/Password' }, status: :unauthorized
     else
       payload = {
         user_id: @user.id
