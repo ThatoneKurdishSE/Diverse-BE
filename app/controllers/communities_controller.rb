@@ -32,7 +32,7 @@ class CommunitiesController < ApplicationController
   end
 
   def search
-    if params[:serach_criteria]
+    if params[:search_criteria]
       @search_results = search_by_name
       if @search_results.length > 0
         render json: @search_results
