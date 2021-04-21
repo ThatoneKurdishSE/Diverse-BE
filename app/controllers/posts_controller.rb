@@ -9,7 +9,7 @@ class PostsController < ApplicationController
     end
 
     def index
-        render json: all_posts, include: [:communities, :users, :post_tags, :post_comments, :post_likes]
+        render json: all_posts, includes: [:communities, :users, :post_tags, :post_comments, :post_likes]
     end
 
     def show
