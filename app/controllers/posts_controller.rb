@@ -8,6 +8,14 @@ class PostsController < ApplicationController
         Post.find(params[:id])
     end
 
+    def get_user
+        User.find(@post[:user_id])
+    end
+
+    def get_community
+        Community.find(@post[:community_id])
+    end
+
     def index
         render json: all_posts, includes: [:communities, :users, :post_tags, :post_comments, :post_likes]
     end
@@ -20,7 +28,7 @@ class PostsController < ApplicationController
         @post = Post.new(post_params)
         if @post.valid?
             @post.save
-            render json: @post, message: "Post created by #{User.find(params[:user_id])} in #{Community.find(params[:community_id])}!"
+            render json: @post, message: "Post created by #{get_user.username} in #{get_community.name}!"
         else
             render json: { errors: @post.errors.full_messages }, status: :unprocessable_entity
     end
@@ -51,7 +59,7 @@ class PostsController < ApplicationController
 
     # Only post_users or community owners should be able to delete a post
     def destroy
-        @post = Post.find(params[:id])
+        @post = find_by_id
         @post.destroy
 
         render json: "Deleted #{@post}"
