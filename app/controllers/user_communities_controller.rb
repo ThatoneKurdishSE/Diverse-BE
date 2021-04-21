@@ -17,7 +17,7 @@ class UserCommunitiesController < ApplicationController
 
     if @user && @community
       @user_community = UserCommunity.create(user_community_params)
-      render json: @user_community, message: 'Created new User Community!'
+      render json: @user_community, message: "#{@user.username} became a member of ##{@community.name}"
     else
       render json: 'Unable to create UserCommunity, please review.'
     end
