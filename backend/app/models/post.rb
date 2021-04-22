@@ -7,5 +7,6 @@ class Post < ApplicationRecord
     belongs_to :community
     has_many :comments
     has_many :post_likes
+    has_many :comments
     has_many :post_tags
 end

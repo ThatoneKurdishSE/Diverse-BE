@@ -2870,3 +2870,1531 @@ Processing by UsersController#show as */*
 Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 659)
 
 
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPostTag Load (0.3ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (2.1ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (1.4ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.8ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.8ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.7ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.7ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.6ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.7ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.6ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.9ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 10]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.7ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 11]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.8ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 12]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPostLike Load (0.3ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.9ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.6ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.8ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.7ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.7ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.6ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.8ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.7ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.9ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.7ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 10]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.8ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 11]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.7ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 12]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.8ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 13]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.6ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 14]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.7ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 15]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.6ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.6ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.8ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.8ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 10]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.7ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.7ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.7ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.7ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCommunityOwner Load (0.3ms)[0m  [1m[34mSELECT "community_owners".* FROM "community_owners"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Destroy (0.8ms)[0m  [1m[31mDELETE FROM "community_owners" WHERE "community_owners"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Destroy (0.7ms)[0m  [1m[31mDELETE FROM "community_owners" WHERE "community_owners"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Destroy (0.7ms)[0m  [1m[31mDELETE FROM "community_owners" WHERE "community_owners"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Destroy (0.7ms)[0m  [1m[31mDELETE FROM "community_owners" WHERE "community_owners"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUserCommunity Load (0.2ms)[0m  [1m[34mSELECT "user_communities".* FROM "user_communities"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.8ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.6ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.8ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.7ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.6ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.7ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.9ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (1.0ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.7ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.6ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 10]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.7ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 11]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.7ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 12]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.7ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 13]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.7ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 14]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.7ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 15]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.6ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 16]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Destroy (0.8ms)[0m  [1m[31mDELETE FROM "communities" WHERE "communities"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Destroy (0.7ms)[0m  [1m[31mDELETE FROM "communities" WHERE "communities"."id" = ?[0m  [["id", 10]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Destroy (0.6ms)[0m  [1m[31mDELETE FROM "communities" WHERE "communities"."id" = ?[0m  [["id", 11]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Destroy (0.6ms)[0m  [1m[31mDELETE FROM "communities" WHERE "communities"."id" = ?[0m  [["id", 12]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jack@gjeffgolden.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at", "age") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "Jack"], ["email", "jack@gjeffgolden.com"], ["password_digest", "$2a$12$qFLBEvMh1VdF9vUiHh0lV.DZf4Qz2rZaU5R7AB.BPsdk7wm7oYo76"], ["created_at", "2021-04-22 18:04:38.426655"], ["updated_at", "2021-04-22 18:04:38.426655"], ["age", 27]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ryan@gjeffgolden.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at", "age") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "Ryan"], ["email", "ryan@gjeffgolden.com"], ["password_digest", "$2a$12$VZDY0nwpkh.j4usudmwLcOlQ/Yvtj.V4EWazOgdealpoJFyJ7qIoC"], ["created_at", "2021-04-22 18:04:38.600560"], ["updated_at", "2021-04-22 18:04:38.600560"], ["age", 73]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "stephen@gjeffgolden.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at", "age") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "Stephen"], ["email", "stephen@gjeffgolden.com"], ["password_digest", "$2a$12$Ypy1wFP4nZir48cMfGgB4OeUC2cZyOHMLIM9pgeqJ3QH./XC8fwO2"], ["created_at", "2021-04-22 18:04:38.776074"], ["updated_at", "2021-04-22 18:04:38.776074"], ["age", 197]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "raz@gjeffgolden.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at", "age") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "Razio"], ["email", "raz@gjeffgolden.com"], ["password_digest", "$2a$12$pZ1Peh/E6wPw1TPEi7gZSu3MiDqj62l3TKiUGlVWW0ktvZsKRzTN."], ["created_at", "2021-04-22 18:04:38.955243"], ["updated_at", "2021-04-22 18:04:38.955243"], ["age", 19]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jeff@gjeffgolden.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at", "age") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "Jeff"], ["email", "jeff@gjeffgolden.com"], ["password_digest", "$2a$12$BSVGRqF0pXGTYoZ132QxY.WW5heSKUwxLHsCAbNcKlm4u65u0zGpy"], ["created_at", "2021-04-22 18:04:39.129329"], ["updated_at", "2021-04-22 18:04:39.129329"], ["age", 999]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "obinna@gjeffgolden.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at", "age") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "Obinna"], ["email", "obinna@gjeffgolden.com"], ["password_digest", "$2a$12$gxO6l8h0m6vaevzduzB4ZesjdeR6GW23T4dQhNrb5wgxJRVNcOupG"], ["created_at", "2021-04-22 18:04:39.306513"], ["updated_at", "2021-04-22 18:04:39.306513"], ["age", 23]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "communities" WHERE "communities"."name" = ? LIMIT ?[0m  [["name", "Hiking"], ["LIMIT", 1]]
+  [1m[36mCommunity Create (0.6ms)[0m  [1m[32mINSERT INTO "communities" ("name", "location", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hiking"], ["location", "Denver, CO"], ["description", "A small community of hikers around Denver"], ["created_at", "2021-04-22 18:04:39.311523"], ["updated_at", "2021-04-22 18:04:39.311523"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "communities" WHERE "communities"."name" = ? LIMIT ?[0m  [["name", "Concerts"], ["LIMIT", 1]]
+  [1m[36mCommunity Create (0.6ms)[0m  [1m[32mINSERT INTO "communities" ("name", "location", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Concerts"], ["location", "Los Angeles, CA"], ["description", "A medium-sized community of concert-goers around Los Angeles"], ["created_at", "2021-04-22 18:04:39.315978"], ["updated_at", "2021-04-22 18:04:39.315978"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "communities" WHERE "communities"."name" = ? LIMIT ?[0m  [["name", "Board Games"], ["LIMIT", 1]]
+  [1m[36mCommunity Create (0.7ms)[0m  [1m[32mINSERT INTO "communities" ("name", "location", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Board Games"], ["location", "Seattle, WA"], ["description", "A large community of board game players around Seattle"], ["created_at", "2021-04-22 18:04:39.320721"], ["updated_at", "2021-04-22 18:04:39.320721"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "communities" WHERE "communities"."name" = ? LIMIT ?[0m  [["name", "Jazzercise"], ["LIMIT", 1]]
+  [1m[36mCommunity Create (0.6ms)[0m  [1m[32mINSERT INTO "communities" ("name", "location", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jazzercise"], ["location", "Portland, OR"], ["description", "A medium-sized community of jazzercise around Portland"], ["created_at", "2021-04-22 18:04:39.335451"], ["updated_at", "2021-04-22 18:04:39.335451"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (1.0ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["community_id", 13], ["created_at", "2021-04-22 18:04:39.349995"], ["updated_at", "2021-04-22 18:04:39.349995"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.9ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["community_id", 15], ["created_at", "2021-04-22 18:04:39.355993"], ["updated_at", "2021-04-22 18:04:39.355993"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.8ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["community_id", 14], ["created_at", "2021-04-22 18:04:39.361075"], ["updated_at", "2021-04-22 18:04:39.361075"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.9ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["community_id", 14], ["created_at", "2021-04-22 18:04:39.365879"], ["updated_at", "2021-04-22 18:04:39.365879"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.8ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["community_id", 15], ["created_at", "2021-04-22 18:04:39.371043"], ["updated_at", "2021-04-22 18:04:39.371043"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.6ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 4], ["community_id", 13], ["created_at", "2021-04-22 18:04:39.375104"], ["updated_at", "2021-04-22 18:04:39.375104"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.9ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 4], ["community_id", 16], ["created_at", "2021-04-22 18:04:39.378592"], ["updated_at", "2021-04-22 18:04:39.378592"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.7ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 4], ["community_id", 15], ["created_at", "2021-04-22 18:04:39.382862"], ["updated_at", "2021-04-22 18:04:39.382862"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.6ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 3], ["community_id", 13], ["created_at", "2021-04-22 18:04:39.386534"], ["updated_at", "2021-04-22 18:04:39.386534"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.7ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 3], ["community_id", 14], ["created_at", "2021-04-22 18:04:39.390195"], ["updated_at", "2021-04-22 18:04:39.390195"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.8ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 3], ["community_id", 15], ["created_at", "2021-04-22 18:04:39.393879"], ["updated_at", "2021-04-22 18:04:39.393879"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.7ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 5], ["community_id", 13], ["created_at", "2021-04-22 18:04:39.397543"], ["updated_at", "2021-04-22 18:04:39.397543"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.8ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 5], ["community_id", 14], ["created_at", "2021-04-22 18:04:39.401261"], ["updated_at", "2021-04-22 18:04:39.401261"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.7ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 6], ["community_id", 15], ["created_at", "2021-04-22 18:04:39.405086"], ["updated_at", "2021-04-22 18:04:39.405086"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.8ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 6], ["community_id", 14], ["created_at", "2021-04-22 18:04:39.408853"], ["updated_at", "2021-04-22 18:04:39.408853"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.7ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 6], ["community_id", 16], ["created_at", "2021-04-22 18:04:39.413102"], ["updated_at", "2021-04-22 18:04:39.413102"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Create (0.8ms)[0m  [1m[32mINSERT INTO "community_owners" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["community_id", 15], ["created_at", "2021-04-22 18:04:39.423205"], ["updated_at", "2021-04-22 18:04:39.423205"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Create (0.7ms)[0m  [1m[32mINSERT INTO "community_owners" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 5], ["community_id", 13], ["created_at", "2021-04-22 18:04:39.427126"], ["updated_at", "2021-04-22 18:04:39.427126"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Create (0.7ms)[0m  [1m[32mINSERT INTO "community_owners" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 4], ["community_id", 16], ["created_at", "2021-04-22 18:04:39.430725"], ["updated_at", "2021-04-22 18:04:39.430725"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Create (0.7ms)[0m  [1m[32mINSERT INTO "community_owners" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["community_id", 14], ["created_at", "2021-04-22 18:04:39.434502"], ["updated_at", "2021-04-22 18:04:39.434502"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "ip_address", "user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Board Game Night"], ["content", "Everybody come out this Tuesday for Board Game night at my place!"], ["ip_address", "2651:262:1470:f170:85a6:58a4:557b:9199"], ["user_id", 1], ["community_id", 15], ["created_at", "2021-04-22 18:04:39.438673"], ["updated_at", "2021-04-22 18:04:39.438673"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "ip_address", "user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Illenium Concert"], ["content", "Illenium this Friday at Red Rocks!"], ["ip_address", "2651:262:1470:f170:85a9:88a4:557b:9199"], ["user_id", 2], ["community_id", 14], ["created_at", "2021-04-22 18:04:39.442724"], ["updated_at", "2021-04-22 18:04:39.442724"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "ip_address", "user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Get Moving!"], ["content", "Lets get MOOving this afternoon!"], ["ip_address", "3821:262:1470:f170:85a9:88a4:557b:9934"], ["user_id", 4], ["community_id", 16], ["created_at", "2021-04-22 18:04:39.446728"], ["updated_at", "2021-04-22 18:04:39.446728"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "ip_address", "user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "CCT"], ["content", "We're doing the CCT this weekend, everyone make sure to pack a bottle of water!"], ["ip_address", "3321:242:1370:f110:83a9:88a4:557b:9934"], ["user_id", 5], ["community_id", 13], ["created_at", "2021-04-22 18:04:39.450488"], ["updated_at", "2021-04-22 18:04:39.450488"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "ip_address", "user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Telluride Bluegrass Festival"], ["content", "Finally rescheduled, who's coming with???"], ["ip_address", "9321:242:1670:f110:93a9:88a4:757b:2934"], ["user_id", 3], ["community_id", 14], ["created_at", "2021-04-22 18:04:39.454337"], ["updated_at", "2021-04-22 18:04:39.454337"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Sounds great!"], ["user_id", 4], ["post_id", 1], ["created_at", "2021-04-22 18:04:39.458088"], ["updated_at", "2021-04-22 18:04:39.458088"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "I can't make it :("], ["user_id", 2], ["post_id", 1], ["created_at", "2021-04-22 18:04:39.461867"], ["updated_at", "2021-04-22 18:04:39.461867"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "So cool!!!"], ["user_id", 1], ["post_id", 2], ["created_at", "2021-04-22 18:04:39.465646"], ["updated_at", "2021-04-22 18:04:39.465646"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Time to get my lazy butt in gear!"], ["user_id", 5], ["post_id", 3], ["created_at", "2021-04-22 18:04:39.469617"], ["updated_at", "2021-04-22 18:04:39.469617"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Better believe I'll be there!"], ["user_id", 2], ["post_id", 3], ["created_at", "2021-04-22 18:04:39.473937"], ["updated_at", "2021-04-22 18:04:39.473937"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Can't wait!"], ["user_id", 6], ["post_id", 3], ["created_at", "2021-04-22 18:04:39.478013"], ["updated_at", "2021-04-22 18:04:39.478013"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (1.1ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "We could probably do it in a day..."], ["user_id", 3], ["post_id", 4], ["created_at", "2021-04-22 18:04:39.482979"], ["updated_at", "2021-04-22 18:04:39.482979"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Pumped!"], ["user_id", 2], ["post_id", 4], ["created_at", "2021-04-22 18:04:39.494592"], ["updated_at", "2021-04-22 18:04:39.494592"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "I can't contain my excitement."], ["user_id", 1], ["post_id", 5], ["created_at", "2021-04-22 18:04:39.498917"], ["updated_at", "2021-04-22 18:04:39.498917"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "HYFR"], ["user_id", 4], ["post_id", 5], ["created_at", "2021-04-22 18:04:39.503906"], ["updated_at", "2021-04-22 18:04:39.503906"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.7ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 1], ["user_id", 6], ["created_at", "2021-04-22 18:04:39.508667"], ["updated_at", "2021-04-22 18:04:39.508667"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.7ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 1], ["user_id", 2], ["created_at", "2021-04-22 18:04:39.512734"], ["updated_at", "2021-04-22 18:04:39.512734"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.7ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 2], ["user_id", 5], ["created_at", "2021-04-22 18:04:39.516588"], ["updated_at", "2021-04-22 18:04:39.516588"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.7ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 2], ["user_id", 1], ["created_at", "2021-04-22 18:04:39.520504"], ["updated_at", "2021-04-22 18:04:39.520504"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.7ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 3], ["user_id", 1], ["created_at", "2021-04-22 18:04:39.524622"], ["updated_at", "2021-04-22 18:04:39.524622"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.8ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 3], ["user_id", 5], ["created_at", "2021-04-22 18:04:39.529375"], ["updated_at", "2021-04-22 18:04:39.529375"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.8ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 3], ["user_id", 6], ["created_at", "2021-04-22 18:04:39.533548"], ["updated_at", "2021-04-22 18:04:39.533548"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.7ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 3], ["user_id", 2], ["created_at", "2021-04-22 18:04:39.537857"], ["updated_at", "2021-04-22 18:04:39.537857"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.7ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 4], ["user_id", 5], ["created_at", "2021-04-22 18:04:39.541671"], ["updated_at", "2021-04-22 18:04:39.541671"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.7ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 4], ["user_id", 3], ["created_at", "2021-04-22 18:04:39.545385"], ["updated_at", "2021-04-22 18:04:39.545385"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.7ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 4], ["user_id", 1], ["created_at", "2021-04-22 18:04:39.549286"], ["updated_at", "2021-04-22 18:04:39.549286"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.7ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 4], ["user_id", 4], ["created_at", "2021-04-22 18:04:39.552968"], ["updated_at", "2021-04-22 18:04:39.552968"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.7ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 5], ["user_id", 6], ["created_at", "2021-04-22 18:04:39.556653"], ["updated_at", "2021-04-22 18:04:39.556653"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.8ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 5], ["user_id", 1], ["created_at", "2021-04-22 18:04:39.561383"], ["updated_at", "2021-04-22 18:04:39.561383"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.7ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 5], ["user_id", 4], ["created_at", "2021-04-22 18:04:39.565963"], ["updated_at", "2021-04-22 18:04:39.565963"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.8ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#games"], ["post_id", 1], ["created_at", "2021-04-22 18:04:39.569860"], ["updated_at", "2021-04-22 18:04:39.569860"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.6ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#zombicide"], ["post_id", 1], ["created_at", "2021-04-22 18:04:39.573796"], ["updated_at", "2021-04-22 18:04:39.573796"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.7ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#partyUP"], ["post_id", 2], ["created_at", "2021-04-22 18:04:39.577339"], ["updated_at", "2021-04-22 18:04:39.577339"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.7ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#RedRocks"], ["post_id", 2], ["created_at", "2021-04-22 18:04:39.581140"], ["updated_at", "2021-04-22 18:04:39.581140"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.6ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#SpartanRacePrep"], ["post_id", 3], ["created_at", "2021-04-22 18:04:39.585001"], ["updated_at", "2021-04-22 18:04:39.585001"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.7ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#TheCoreYouCantContain"], ["post_id", 3], ["created_at", "2021-04-22 18:04:39.588489"], ["updated_at", "2021-04-22 18:04:39.588489"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.7ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#MooveItMooveIt"], ["post_id", 3], ["created_at", "2021-04-22 18:04:39.592014"], ["updated_at", "2021-04-22 18:04:39.592014"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.7ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#SummerBod"], ["post_id", 4], ["created_at", "2021-04-22 18:04:39.595496"], ["updated_at", "2021-04-22 18:04:39.595496"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.6ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#AllDownhillFromHere"], ["post_id", 4], ["created_at", "2021-04-22 18:04:39.599204"], ["updated_at", "2021-04-22 18:04:39.599204"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.7ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#NoPainNoGain"], ["post_id", 4], ["created_at", "2021-04-22 18:04:39.602790"], ["updated_at", "2021-04-22 18:04:39.602790"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (1.0ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#GetDown"], ["post_id", 5], ["created_at", "2021-04-22 18:04:39.607195"], ["updated_at", "2021-04-22 18:04:39.607195"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.7ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#Celebrate"], ["post_id", 5], ["created_at", "2021-04-22 18:04:39.612153"], ["updated_at", "2021-04-22 18:04:39.612153"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/profile" for ::1 at 2021-04-22 12:04:51 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.2ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 103ms (Views: 68.8ms | ActiveRecord: 6.7ms | Allocations: 48236)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 12:05:59 -0600
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.5ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.3ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 17ms (Views: 11.4ms | ActiveRecord: 2.5ms | Allocations: 4368)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 12:06:15 -0600
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 2.1ms | Allocations: 4368)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 12:06:38 -0600
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.8ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.3ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 2.3ms | Allocations: 4369)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 12:10:35 -0600
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.5ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.7ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 35ms (Views: 27.4ms | ActiveRecord: 2.8ms | Allocations: 4368)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 12:15:37 -0600
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.9ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 28ms (Views: 20.7ms | ActiveRecord: 3.7ms | Allocations: 4349)
+
+
+Started POST "/login" for ::1 at 2021-04-22 12:22:42 -0600
+Processing by UsersController#login as JSON
+  Parameters: {"user"=>{"username"=>"Jeff", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:17:in `login'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Jeff"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 201 Created in 176ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 1299)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 12:22:42 -0600
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.5ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 18ms (Views: 12.4ms | ActiveRecord: 3.0ms | Allocations: 4438)
+
+
+Started POST "/login" for ::1 at 2021-04-22 12:22:49 -0600
+Processing by UsersController#login as JSON
+  Parameters: {"user"=>{"username"=>"Jeff", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Jeff"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 201 Created in 171ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 710)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 12:22:50 -0600
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.3ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 11ms (Views: 7.3ms | ActiveRecord: 1.7ms | Allocations: 4349)
+
+
+Started POST "/login" for ::1 at 2021-04-22 12:23:05 -0600
+Processing by UsersController#login as JSON
+  Parameters: {"user"=>{"username"=>"Jeff", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Jeff"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 201 Created in 173ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 710)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 12:23:05 -0600
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.6ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 17ms (Views: 11.9ms | ActiveRecord: 2.3ms | Allocations: 4349)
+
+
+Started POST "/login" for ::1 at 2021-04-22 12:26:24 -0600
+Processing by UsersController#login as JSON
+  Parameters: {"user"=>{"username"=>"Jeff", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Jeff"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 201 Created in 174ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 709)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 12:26:24 -0600
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 2.4ms | Allocations: 4349)
+
+
+Started POST "/login" for ::1 at 2021-04-22 12:27:39 -0600
+Processing by UsersController#login as JSON
+  Parameters: {"user"=>{"username"=>"Jeff", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Jeff"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 201 Created in 177ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 710)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 12:27:39 -0600
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 19ms (Views: 14.8ms | ActiveRecord: 1.8ms | Allocations: 4349)
+
+
+Started POST "/login" for ::1 at 2021-04-22 16:48:40 -0600
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as JSON
+  Parameters: {"user"=>{"username"=>"Jeff", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Jeff"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 201 Created in 176ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 8326)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 16:48:40 -0600
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+Started GET "/communities" for ::1 at 2021-04-22 16:48:40 -0600
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.2ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 76ms (Views: 69.6ms | ActiveRecord: 5.1ms | Allocations: 32467)
+
+
+Processing by CommunitiesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+Completed 200 OK in 6ms (Views: 1.5ms | ActiveRecord: 1.2ms | Allocations: 2258)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 16:49:08 -0600
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.2ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 1.0ms | Allocations: 4438)
+
+
+Started GET "/communities" for ::1 at 2021-04-22 16:51:23 -0600
+Started GET "/profile" for ::1 at 2021-04-22 16:51:23 -0600
+Processing by CommunitiesController#index as */*
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mCommunity Load (0.1ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.4ms | Allocations: 3424)
+
+
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.2ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.9ms | Allocations: 6091)
+
+
+Started GET "/communities" for ::1 at 2021-04-22 16:51:44 -0600
+Started GET "/profile" for ::1 at 2021-04-22 16:51:44 -0600
+Processing by CommunitiesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.5ms | Allocations: 1876)
+
+
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.2ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 1.3ms | Allocations: 4611)
+
+
+Started GET "/communities" for ::1 at 2021-04-22 16:53:35 -0600
+Started GET "/profile" for ::1 at 2021-04-22 16:53:35 -0600
+Started GET "/posts" for ::1 at 2021-04-22 16:53:35 -0600
+Processing by CommunitiesController#index as */*
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 6ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 3289)
+
+
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.2ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.8ms | Allocations: 6363)
+
+
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.4ms | Allocations: 4128)
+
+
+  
+NoMethodError (undefined method `communities' for #<Post:0x00007fc28d0b6678>
+Did you mean?  community
+               community=):
+  
+app/controllers/posts_controller.rb:24:in `index'
+Started GET "/communities" for ::1 at 2021-04-22 16:53:41 -0600
+Started GET "/profile" for ::1 at 2021-04-22 16:53:41 -0600
+Started GET "/posts" for ::1 at 2021-04-22 16:53:41 -0600
+Processing by CommunitiesController#index as */*
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by PostsController#index as */*
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 4020)
+
+
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.3ms | Allocations: 8422)
+
+
+  [1m[36mPostLike Load (0.3ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  
+NoMethodError (undefined method `communities' for #<Post:0x00007fc28d9b1d90>
+Did you mean?  community
+               community=):
+  
+app/controllers/posts_controller.rb:24:in `index'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 73ms (Views: 67.4ms | ActiveRecord: 1.1ms | Allocations: 32386)
+
+
+Started GET "/communities" for ::1 at 2021-04-22 16:55:43 -0600
+Started GET "/profile" for ::1 at 2021-04-22 16:55:43 -0600
+Started GET "/posts" for ::1 at 2021-04-22 16:55:43 -0600
+Processing by CommunitiesController#index as */*
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+Processing by PostsController#index as */*
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 9ms (Views: 5.1ms | ActiveRecord: 0.5ms | Allocations: 3844)
+
+
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.5ms | Allocations: 7030)
+
+
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  
+NoMethodError (undefined method `communities' for #<Post:0x00007fc28d87d7f8>
+Did you mean?  community
+               community=):
+  
+app/controllers/posts_controller.rb:24:in `index'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 83ms (Views: 77.3ms | ActiveRecord: 1.9ms | Allocations: 31988)
+
+
+Started GET "/communities" for ::1 at 2021-04-22 16:56:23 -0600
+Started GET "/profile" for ::1 at 2021-04-22 16:56:23 -0600
+Started GET "/posts" for ::1 at 2021-04-22 16:56:23 -0600
+Processing by CommunitiesController#index as */*
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+Processing by PostsController#index as */*
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.5ms | Allocations: 3847)
+
+
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.5ms | Allocations: 6775)
+
+
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  
+NoMethodError (undefined method `communities' for #<Post:0x00007fffeea54150>
+Did you mean?  community
+               community=):
+  
+app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.2ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 1.4ms | Allocations: 31955)
+
+
+Started GET "/communities" for ::1 at 2021-04-22 16:56:55 -0600
+Started GET "/profile" for ::1 at 2021-04-22 16:56:55 -0600
+Started GET "/posts" for ::1 at 2021-04-22 16:56:55 -0600
+Processing by CommunitiesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+Processing by UsersController#profile as */*
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.5ms | Allocations: 2742)
+
+
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.7ms | Allocations: 6450)
+
+
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  
+NoMethodError (undefined method `communities' for #<Post:0x00007fc28d6ece70>
+Did you mean?  community
+               community=):
+  
+app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 48ms (Views: 43.0ms | ActiveRecord: 1.6ms | Allocations: 31249)
+
+
+Started GET "/communities" for ::1 at 2021-04-22 16:57:17 -0600
+Processing by CommunitiesController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.7ms | Allocations: 1655)
+
+
+Started GET "/communities" for ::1 at 2021-04-22 16:57:23 -0600
+Processing by CommunitiesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms | Allocations: 1655)
+
+
+Started GET "/communities" for ::1 at 2021-04-22 16:57:26 -0600
+Started GET "/profile" for ::1 at 2021-04-22 16:57:26 -0600
+Started GET "/posts" for ::1 at 2021-04-22 16:57:26 -0600
+Processing by CommunitiesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by UsersController#profile as */*
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+Processing by PostsController#index as */*
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 3268)
+
+
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.6ms | Allocations: 6589)
+
+
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  
+NoMethodError (undefined method `communities' for #<Post:0x00007fc28d9a8e98>
+Did you mean?  community
+               community=):
+  
+app/controllers/posts_controller.rb:24:in `index'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 56ms (Views: 51.4ms | ActiveRecord: 1.3ms | Allocations: 31620)
+
+
+Started GET "/communities" for ::1 at 2021-04-22 16:58:06 -0600
+Started GET "/profile" for ::1 at 2021-04-22 16:58:06 -0600
+Started GET "/posts" for ::1 at 2021-04-22 16:58:06 -0600
+Processing by CommunitiesController#index as */*
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by UsersController#profile as */*
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.6ms | Allocations: 2860)
+
+
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCommunity Load (0.5ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.6ms | Allocations: 6822)
+
+
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  
+NoMethodError (undefined method `communities' for #<Post:0x00007fc28d125410>
+Did you mean?  community
+               community=):
+  
+app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.2ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 47ms (Views: 41.0ms | ActiveRecord: 1.7ms | Allocations: 30742)
+
+
+Started GET "/posts" for ::1 at 2021-04-22 16:59:11 -0600
+Processing by PostsController#index as */*
+  Parameters: {"title"=>"Board Game Night Part Deux", "content"=>"Everybody come out this Friday for Board Game night at my place!", "ip_address"=>"2651:262:1470:f170:85a6:58a4:557b:9199", "user_id"=>1, "community_id"=>15, "post"=>{"title"=>"Board Game Night Part Deux", "content"=>"Everybody come out this Friday for Board Game night at my place!", "ip_address"=>"2651:262:1470:f170:85a6:58a4:557b:9199", "user_id"=>1, "community_id"=>15}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms | Allocations: 4041)
+
+
+  
+NoMethodError (undefined method `communities' for #<Post:0x00007fc28d80cc88>
+Did you mean?  community
+               community=):
+  
+app/controllers/posts_controller.rb:24:in `index'
+Started GET "/user" for ::1 at 2021-04-22 16:59:20 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/users" for ::1 at 2021-04-22 16:59:22 -0600
+Processing by UsersController#index as */*
+  Parameters: {"title"=>"Board Game Night Part Deux", "content"=>"Everybody come out this Friday for Board Game night at my place!", "ip_address"=>"2651:262:1470:f170:85a6:58a4:557b:9199", "user_id"=>1, "community_id"=>15, "user"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:33:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 1457)
+
+
+Started GET "/communities" for ::1 at 2021-04-22 16:59:28 -0600
+Processing by CommunitiesController#index as */*
+  Parameters: {"title"=>"Board Game Night Part Deux", "content"=>"Everybody come out this Friday for Board Game night at my place!", "ip_address"=>"2651:262:1470:f170:85a6:58a4:557b:9199", "user_id"=>1, "community_id"=>15, "community"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.1ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.3ms | Allocations: 1656)
+
+
+Started GET "/posts" for ::1 at 2021-04-22 16:59:32 -0600
+Processing by PostsController#index as */*
+  Parameters: {"title"=>"Board Game Night Part Deux", "content"=>"Everybody come out this Friday for Board Game night at my place!", "ip_address"=>"2651:262:1470:f170:85a6:58a4:557b:9199", "user_id"=>1, "community_id"=>15, "post"=>{"title"=>"Board Game Night Part Deux", "content"=>"Everybody come out this Friday for Board Game night at my place!", "ip_address"=>"2651:262:1470:f170:85a6:58a4:557b:9199", "user_id"=>1, "community_id"=>15}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms | Allocations: 4041)
+
+
+  
+NoMethodError (undefined method `communities' for #<Post:0x00007fffed837210>
+Did you mean?  community
+               community=):
+  
+app/controllers/posts_controller.rb:24:in `index'
+Started POST "/login" for ::1 at 2021-04-22 17:02:24 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as JSON
+  Parameters: {"user"=>{"username"=>"Jeff", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Jeff"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 201 Created in 185ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 8370)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 17:02:25 -0600
+Started GET "/posts" for ::1 at 2021-04-22 17:02:25 -0600
+Processing by UsersController#profile as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPostLike Load (0.2ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+Started GET "/communities" for ::1 at 2021-04-22 17:02:25 -0600
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+Completed 200 OK in 87ms (Views: 77.7ms | ActiveRecord: 6.5ms | Allocations: 34595)
+
+
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 1.5ms | Allocations: 19231)
+
+
+  
+NoMethodError (undefined method `communities' for #<Post:0x00007f8c4998d910>
+Did you mean?  community
+               community=):
+  
+app/controllers/posts_controller.rb:24:in `index'
+Processing by CommunitiesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.7ms | Allocations: 1702)
+
+
+Started GET "/communities" for ::1 at 2021-04-22 17:03:11 -0600
+Started GET "/profile" for ::1 at 2021-04-22 17:03:11 -0600
+Started GET "/posts" for ::1 at 2021-04-22 17:03:11 -0600
+Processing by CommunitiesController#index as */*
+Processing by UsersController#profile as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by PostsController#index as */*
+  [1m[36mCommunity Load (0.5ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+Completed 200 OK in 51ms (Views: 11.5ms | ActiveRecord: 4.0ms | Allocations: 20872)
+
+
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.3ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 85ms (Views: 39.3ms | ActiveRecord: 7.0ms | Allocations: 38209)
+
+
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 1.8ms | Allocations: 29772)
+
+
+  
+NoMethodError (undefined method `users' for #<Post:0x00007f8c490df9f8>
+Did you mean?  user
+               user=):
+  
+app/controllers/posts_controller.rb:24:in `index'
+Started GET "/communities" for ::1 at 2021-04-22 17:03:38 -0600
+Started GET "/profile" for ::1 at 2021-04-22 17:03:38 -0600
+Started GET "/posts" for ::1 at 2021-04-22 17:03:38 -0600
+Processing by CommunitiesController#index as */*
+Processing by UsersController#profile as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by PostsController#index as */*
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+Completed 200 OK in 37ms (Views: 5.5ms | ActiveRecord: 4.0ms | Allocations: 20886)
+
+
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mPostLike Load (0.3ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 77ms (Views: 40.3ms | ActiveRecord: 6.4ms | Allocations: 38607)
+
+
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostTag Load (0.3ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 4.1ms | Allocations: 43164)
+
+
+  
+NoMethodError (undefined method `post_comments' for #<Post:0x00007f8c4c0bc310>
+Did you mean?  post_likes):
+  
+app/controllers/posts_controller.rb:24:in `index'
+Started GET "/communities" for ::1 at 2021-04-22 17:06:16 -0600
+Started GET "/profile" for ::1 at 2021-04-22 17:06:16 -0600
+Started GET "/posts" for ::1 at 2021-04-22 17:06:16 -0600
+Processing by CommunitiesController#index as */*
+Processing by UsersController#profile as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by PostsController#index as */*
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 14.5ms | ActiveRecord: 3.0ms | Allocations: 23686)
+
+
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.2ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+Completed 200 OK in 73ms (Views: 44.3ms | ActiveRecord: 7.2ms | Allocations: 39673)
+
+
+  [1m[36mPostTag Load (0.2ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 3.3ms | Allocations: 40969)
+
+
+  
+NameError (uninitialized constant Post::PostComment):
+  
+app/controllers/posts_controller.rb:24:in `index'
+Started GET "/communities" for ::1 at 2021-04-22 17:06:59 -0600
+Started GET "/profile" for ::1 at 2021-04-22 17:06:59 -0600
+Started GET "/posts" for ::1 at 2021-04-22 17:06:59 -0600
+Processing by UsersController#profile as */*
+Processing by CommunitiesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.2ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Completed 200 OK in 46ms (Views: 19.9ms | ActiveRecord: 1.3ms | Allocations: 23068)
+
+
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.2ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+Completed 200 OK in 82ms (Views: 41.9ms | ActiveRecord: 9.3ms | Allocations: 44299)
+
+
+  [1m[36mPostTag Load (0.2ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.3ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostTag Load (0.4ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCommunity Load (0.7ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostTag Load (0.3ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostTag Load (0.3ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 4]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 4]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCACHE Community Load (0.0ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostTag Load (0.3ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 5]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 5]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+Completed 200 OK in 120ms (Views: 80.3ms | ActiveRecord: 9.2ms | Allocations: 57708)
+
+
+Started GET "/posts" for ::1 at 2021-04-22 17:07:13 -0600
+Processing by PostsController#index as */*
+  Parameters: {"title"=>"Board Game Night Part Deux", "content"=>"Everybody come out this Friday for Board Game night at my place!", "ip_address"=>"2651:262:1470:f170:85a6:58a4:557b:9199", "user_id"=>1, "community_id"=>15, "post"=>{"title"=>"Board Game Night Part Deux", "content"=>"Everybody come out this Friday for Board Game night at my place!", "ip_address"=>"2651:262:1470:f170:85a6:58a4:557b:9199", "user_id"=>1, "community_id"=>15}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostTag Load (0.5ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.6ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCommunity Load (0.8ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostTag Load (0.3ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.3ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCommunity Load (0.5ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostTag Load (0.3ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostTag Load (0.3ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 4]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.3ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 4]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCACHE Community Load (0.0ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostTag Load (0.3ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 5]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.3ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 5]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+Completed 200 OK in 51ms (Views: 41.8ms | ActiveRecord: 7.8ms | Allocations: 19802)
+
+
+Started GET "/communities" for ::1 at 2021-04-22 17:08:29 -0600
+Started GET "/profile" for ::1 at 2021-04-22 17:08:29 -0600
+Started GET "/posts" for ::1 at 2021-04-22 17:08:29 -0600
+Processing by CommunitiesController#index as */*
+Processing by UsersController#profile as */*
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+Processing by PostsController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 5]]
+  [1m[36mCommunity Load (0.5ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  ↳ app/controllers/communities_controller.rb:12:in `index'
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+Completed 200 OK in 54ms (Views: 23.3ms | ActiveRecord: 2.8ms | Allocations: 24003)
+
+
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCommunity Load (0.5ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostTag Load (0.3ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[36mPostLike Load (0.5ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+Completed 200 OK in 107ms (Views: 72.4ms | ActiveRecord: 8.6ms | Allocations: 44467)
+
+
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.5ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCommunity Load (0.5ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostTag Load (0.3ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCommunity Load (0.3ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostTag Load (0.5ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.3ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCommunity Load (0.4ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostTag Load (0.4ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 4]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 4]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mCACHE Community Load (0.0ms)[0m  [1m[34mSELECT "communities".* FROM "communities" WHERE "communities"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostTag Load (0.4ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags" WHERE "post_tags"."post_id" = ?[0m  [["post_id", 5]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+  [1m[36mPostLike Load (0.2ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."post_id" = ?[0m  [["post_id", 5]]
+  ↳ app/controllers/posts_controller.rb:24:in `index'
+Completed 200 OK in 134ms (Views: 82.3ms | ActiveRecord: 11.1ms | Allocations: 54849)
+
+

@@ -21,13 +21,13 @@ class PostsController < ApplicationController
     end
 
     def index
-        render json: all_posts, include: [:communities, :users, :post_tags, :post_comments, :post_likes]
+        render json: all_posts, include: [:community, :user, :post_tags, :comments, :post_likes]
     end
 
     def show
         @post = find_by_id
         if @post
-            render json: @post, include: [:community, :user, :post_tags, :post_comments, :post_likes]
+            render json: @post, include: [:community, :user, :post_tags, :comments, :post_likes]
         else
             unable_to_locate_post
         end
