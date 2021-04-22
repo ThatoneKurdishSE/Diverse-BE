@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
     def show
         @comment = find_by_id
         if @comment
-            render json: @comment, includes: [:user, :post]
+            render json: @comment, include: [:user, :post]
         else
             unable_to_locate_comment
         end

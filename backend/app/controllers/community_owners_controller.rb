@@ -21,13 +21,13 @@ class CommunityOwnersController < ApplicationController
   end
 
   def index
-    render json: all_community_owners, includes: %i[users communities]
+    render json: all_community_owners, include: %i[users communities]
   end
   
   def show
     @community_owner = find_by_id
     if @community_owner
-      render json: @community_owner, includes: %i[users communities]
+      render json: @community_owner, include: %i[users communities]
     else
       unable_to_locate_community_owner
     end

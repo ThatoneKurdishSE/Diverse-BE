@@ -2814,3 +2814,59 @@ FOREIGN KEY ("community_id")
   [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mPostTag Create (0.3ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#Celebrate"], ["post_id", 5], ["created_at", "2021-04-21 21:33:24.326863"], ["updated_at", "2021-04-21 21:33:24.326863"]]
   [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/login" for ::1 at 2021-04-22 11:53:08 -0600
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started POST "/login" for ::1 at 2021-04-22 11:53:31 -0600
+Processing by UsersController#login as */*
+  Parameters: {"user"=>{"username"=>"Jack", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Jack"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 201 Created in 224ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 7529)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 11:53:56 -0600
+Processing by UsersController#profile as */*
+  Parameters: {"user"=>{"username"=>"Jack", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (1.1ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 86ms (Views: 78.6ms | ActiveRecord: 5.4ms | Allocations: 33602)
+
+
+Started GET "/profile" for ::1 at 2021-04-22 11:55:54 -0600
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#profile as */*
+  Parameters: {"user"=>{"username"=>"Jack", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:23:in `current_user'
+  [1m[36mCommunity Load (1.0ms)[0m  [1m[34mSELECT "communities".* FROM "communities" INNER JOIN "community_owners" ON "communities"."id" = "community_owners"."community_id" WHERE "community_owners"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+  [1m[36mPostLike Load (0.4ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes" WHERE "post_likes"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `profile'
+Completed 200 OK in 69ms (Views: 51.4ms | ActiveRecord: 6.0ms | Allocations: 38847)
+
+
+Started GET "/users/1" for ::1 at 2021-04-22 11:56:03 -0600
+Processing by UsersController#show as */*
+  Parameters: {"user"=>{"username"=>"Jack", "password"=>"[FILTERED]"}, "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `find_by_id'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 659)
+
+
