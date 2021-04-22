@@ -19,7 +19,7 @@ class PostLikesController < ApplicationController
     def show
         @post_like = find_by_id
         if @post_like
-            render json: find_by_id, includes: [:user, :post]
+            render json: find_by_id, include: [:user, :post]
         else
             unable_to_locate_post_like
         end

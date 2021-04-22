@@ -15,7 +15,7 @@ class PostTagsController < ApplicationController
     def show
         @post_tag = find_by_id
         if @post_tag
-            render json: find_by_id, includes: [:post]
+            render json: find_by_id, include: [:post]
         else
             unable_to_locate_post_tag
         end

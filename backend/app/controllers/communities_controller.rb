@@ -19,7 +19,7 @@ class CommunitiesController < ApplicationController
   def show
     @community = find_by_id
     if @community
-      render json: @community, includes: :users
+      render json: @community, include: [:users, :posts]
     else
       unable_to_locate_community
     end
