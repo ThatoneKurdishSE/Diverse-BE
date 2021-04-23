@@ -36,7 +36,7 @@ class UsersController < ApplicationController
   def show
     @user = find_by_id
     if @user
-      render json: @user, include: [ :communities, :posts, :comments, :likes]
+      render json: @user, include: [ :communities, :posts, :comments, :post_likes]
     else
       unable_to_locate_user
     end

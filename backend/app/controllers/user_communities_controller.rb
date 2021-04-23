@@ -22,15 +22,16 @@ class UserCommunitiesController < ApplicationController
 
   def index
     @user_communities = all_user_communities
-    render json: @user_communities, include: %i[users communities]
+    render json: @user_communities, include: [:user, :community]
   end
 
   def show
     @user_community = find_by_id
     if @user_community
-      render json: @user_community, include: %i[users communities]
+      render json: @user_community, include: [:user, :community]
     else
       unable_to_locate_user_community
+    end
   end
 
   def create
