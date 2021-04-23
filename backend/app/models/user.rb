@@ -11,5 +11,4 @@ class User < ApplicationRecord
     has_many :comments
     has_many :post_likes
     has_many :communities, through: :user_communities
-    has_many :communities, through: :community_owners
 end
