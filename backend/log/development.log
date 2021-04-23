@@ -4398,3 +4398,461 @@ Completed 200 OK in 107ms (Views: 72.4ms | ActiveRecord: 8.6ms | Allocations: 44
 Completed 200 OK in 134ms (Views: 82.3ms | ActiveRecord: 11.1ms | Allocations: 54849)
 
 
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPostTag Load (0.1ms)[0m  [1m[34mSELECT "post_tags".* FROM "post_tags"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.3ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.2ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.2ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 10]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 11]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_tags" WHERE "post_tags"."id" = ?[0m  [["id", 12]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPostLike Load (0.1ms)[0m  [1m[34mSELECT "post_likes".* FROM "post_likes"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.3ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.2ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.2ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 10]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.3ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 11]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.2ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 12]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 13]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 14]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_likes" WHERE "post_likes"."id" = ?[0m  [["id", 15]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 11]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 12]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 13]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 14]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 15]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 16]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 17]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 18]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 19]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 20]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Destroy (0.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCommunityOwner Load (0.1ms)[0m  [1m[34mSELECT "community_owners".* FROM "community_owners"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Destroy (0.2ms)[0m  [1m[31mDELETE FROM "community_owners" WHERE "community_owners"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Destroy (0.1ms)[0m  [1m[31mDELETE FROM "community_owners" WHERE "community_owners"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Destroy (0.1ms)[0m  [1m[31mDELETE FROM "community_owners" WHERE "community_owners"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Destroy (0.1ms)[0m  [1m[31mDELETE FROM "community_owners" WHERE "community_owners"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUserCommunity Load (0.1ms)[0m  [1m[34mSELECT "user_communities".* FROM "user_communities"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 7]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 8]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.1ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 9]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 10]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 11]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.1ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 12]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.1ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 13]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 14]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 15]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Destroy (0.1ms)[0m  [1m[31mDELETE FROM "user_communities" WHERE "user_communities"."id" = ?[0m  [["id", 16]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCommunity Load (0.1ms)[0m  [1m[34mSELECT "communities".* FROM "communities"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "communities" WHERE "communities"."id" = ?[0m  [["id", 13]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Destroy (0.1ms)[0m  [1m[31mDELETE FROM "communities" WHERE "communities"."id" = ?[0m  [["id", 14]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Destroy (0.1ms)[0m  [1m[31mDELETE FROM "communities" WHERE "communities"."id" = ?[0m  [["id", 15]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Destroy (0.1ms)[0m  [1m[31mDELETE FROM "communities" WHERE "communities"."id" = ?[0m  [["id", 16]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jack@gjeffgolden.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at", "age") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "Jack"], ["email", "jack@gjeffgolden.com"], ["password_digest", "$2a$12$5TtJJ9RrFRtRyNTIiWQUY.OSLb5CQpOJz.oGeVh0Rnzrl/HWA7qUK"], ["created_at", "2021-04-23 16:50:31.667484"], ["updated_at", "2021-04-23 16:50:31.667484"], ["age", 27]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ryan@gjeffgolden.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at", "age") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "Ryan"], ["email", "ryan@gjeffgolden.com"], ["password_digest", "$2a$12$KScmkcWriDtMWFfsCXs4ZugiX8X/Y/NB3.34OXZmWeksgCtzDaQz."], ["created_at", "2021-04-23 16:50:31.970300"], ["updated_at", "2021-04-23 16:50:31.970300"], ["age", 73]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "stephen@gjeffgolden.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at", "age") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "Stephen"], ["email", "stephen@gjeffgolden.com"], ["password_digest", "$2a$12$uD/5BXk27m6.njD/zsICTOkF2s4bw4quE9zFq3h39UjCSvkQeYKkm"], ["created_at", "2021-04-23 16:50:32.263401"], ["updated_at", "2021-04-23 16:50:32.263401"], ["age", 197]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "raz@gjeffgolden.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at", "age") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "Razio"], ["email", "raz@gjeffgolden.com"], ["password_digest", "$2a$12$rDnKzewaNxpDAqRnowpzXeT9iaVrjl33a//zvGhKHF0DGqzeIuDUS"], ["created_at", "2021-04-23 16:50:32.549236"], ["updated_at", "2021-04-23 16:50:32.549236"], ["age", 19]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jeff@gjeffgolden.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at", "age") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "Jeff"], ["email", "jeff@gjeffgolden.com"], ["password_digest", "$2a$12$wIhtQ1bspnC4TFKnryQ0KOMc6WpL0q84YcL0pr.Eyejxdp6PvmALi"], ["created_at", "2021-04-23 16:50:32.833454"], ["updated_at", "2021-04-23 16:50:32.833454"], ["age", 999]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "obinna@gjeffgolden.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at", "age") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "Obinna"], ["email", "obinna@gjeffgolden.com"], ["password_digest", "$2a$12$kaHHUkFxCMQg1z6GqtC40eJTkKFT82.u/l0lnLqHlkQCR3jecoQW."], ["created_at", "2021-04-23 16:50:33.117910"], ["updated_at", "2021-04-23 16:50:33.117910"], ["age", 23]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "communities" WHERE "communities"."name" = ? LIMIT ?[0m  [["name", "Hiking"], ["LIMIT", 1]]
+  [1m[36mCommunity Create (0.2ms)[0m  [1m[32mINSERT INTO "communities" ("name", "location", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Hiking"], ["location", "Denver, CO"], ["description", "A small community of hikers around Denver"], ["created_at", "2021-04-23 16:50:33.121218"], ["updated_at", "2021-04-23 16:50:33.121218"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "communities" WHERE "communities"."name" = ? LIMIT ?[0m  [["name", "Concerts"], ["LIMIT", 1]]
+  [1m[36mCommunity Create (0.2ms)[0m  [1m[32mINSERT INTO "communities" ("name", "location", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Concerts"], ["location", "Los Angeles, CA"], ["description", "A medium-sized community of concert-goers around Los Angeles"], ["created_at", "2021-04-23 16:50:33.124129"], ["updated_at", "2021-04-23 16:50:33.124129"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "communities" WHERE "communities"."name" = ? LIMIT ?[0m  [["name", "Board Games"], ["LIMIT", 1]]
+  [1m[36mCommunity Create (0.3ms)[0m  [1m[32mINSERT INTO "communities" ("name", "location", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Board Games"], ["location", "Seattle, WA"], ["description", "A large community of board game players around Seattle"], ["created_at", "2021-04-23 16:50:33.127831"], ["updated_at", "2021-04-23 16:50:33.127831"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunity Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "communities" WHERE "communities"."name" = ? LIMIT ?[0m  [["name", "Jazzercise"], ["LIMIT", 1]]
+  [1m[36mCommunity Create (0.1ms)[0m  [1m[32mINSERT INTO "communities" ("name", "location", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jazzercise"], ["location", "Portland, OR"], ["description", "A medium-sized community of jazzercise around Portland"], ["created_at", "2021-04-23 16:50:33.131192"], ["updated_at", "2021-04-23 16:50:33.131192"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.2ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["community_id", 17], ["created_at", "2021-04-23 16:50:33.138027"], ["updated_at", "2021-04-23 16:50:33.138027"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.2ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["community_id", 19], ["created_at", "2021-04-23 16:50:33.140327"], ["updated_at", "2021-04-23 16:50:33.140327"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.1ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["community_id", 18], ["created_at", "2021-04-23 16:50:33.142228"], ["updated_at", "2021-04-23 16:50:33.142228"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.1ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["community_id", 18], ["created_at", "2021-04-23 16:50:33.144122"], ["updated_at", "2021-04-23 16:50:33.144122"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.2ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["community_id", 19], ["created_at", "2021-04-23 16:50:33.146279"], ["updated_at", "2021-04-23 16:50:33.146279"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.1ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 4], ["community_id", 17], ["created_at", "2021-04-23 16:50:33.148463"], ["updated_at", "2021-04-23 16:50:33.148463"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.1ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 4], ["community_id", 20], ["created_at", "2021-04-23 16:50:33.150324"], ["updated_at", "2021-04-23 16:50:33.150324"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.1ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 4], ["community_id", 19], ["created_at", "2021-04-23 16:50:33.152122"], ["updated_at", "2021-04-23 16:50:33.152122"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.1ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 3], ["community_id", 17], ["created_at", "2021-04-23 16:50:33.154022"], ["updated_at", "2021-04-23 16:50:33.154022"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.1ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 3], ["community_id", 18], ["created_at", "2021-04-23 16:50:33.155826"], ["updated_at", "2021-04-23 16:50:33.155826"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.1ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 3], ["community_id", 19], ["created_at", "2021-04-23 16:50:33.157675"], ["updated_at", "2021-04-23 16:50:33.157675"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.1ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 5], ["community_id", 17], ["created_at", "2021-04-23 16:50:33.159487"], ["updated_at", "2021-04-23 16:50:33.159487"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.1ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 5], ["community_id", 18], ["created_at", "2021-04-23 16:50:33.161376"], ["updated_at", "2021-04-23 16:50:33.161376"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.1ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 6], ["community_id", 19], ["created_at", "2021-04-23 16:50:33.163203"], ["updated_at", "2021-04-23 16:50:33.163203"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.1ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 6], ["community_id", 18], ["created_at", "2021-04-23 16:50:33.165090"], ["updated_at", "2021-04-23 16:50:33.165090"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUserCommunity Create (0.1ms)[0m  [1m[32mINSERT INTO "user_communities" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 6], ["community_id", 20], ["created_at", "2021-04-23 16:50:33.166977"], ["updated_at", "2021-04-23 16:50:33.166977"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Create (0.2ms)[0m  [1m[32mINSERT INTO "community_owners" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["community_id", 19], ["created_at", "2021-04-23 16:50:33.179180"], ["updated_at", "2021-04-23 16:50:33.179180"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Create (0.2ms)[0m  [1m[32mINSERT INTO "community_owners" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 5], ["community_id", 17], ["created_at", "2021-04-23 16:50:33.181495"], ["updated_at", "2021-04-23 16:50:33.181495"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Create (0.2ms)[0m  [1m[32mINSERT INTO "community_owners" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 4], ["community_id", 20], ["created_at", "2021-04-23 16:50:33.183494"], ["updated_at", "2021-04-23 16:50:33.183494"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCommunityOwner Create (0.2ms)[0m  [1m[32mINSERT INTO "community_owners" ("user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["community_id", 18], ["created_at", "2021-04-23 16:50:33.185527"], ["updated_at", "2021-04-23 16:50:33.185527"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "ip_address", "user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Board Game Night"], ["content", "Everybody come out this Tuesday for Board Game night at my place!"], ["ip_address", "2651:262:1470:f170:85a6:58a4:557b:9199"], ["user_id", 1], ["community_id", 19], ["created_at", "2021-04-23 16:50:33.187998"], ["updated_at", "2021-04-23 16:50:33.187998"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "ip_address", "user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Illenium Concert"], ["content", "Illenium this Friday at Red Rocks!"], ["ip_address", "2651:262:1470:f170:85a9:88a4:557b:9199"], ["user_id", 2], ["community_id", 18], ["created_at", "2021-04-23 16:50:33.190108"], ["updated_at", "2021-04-23 16:50:33.190108"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "ip_address", "user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Get Moving!"], ["content", "Lets get MOOving this afternoon!"], ["ip_address", "3821:262:1470:f170:85a9:88a4:557b:9934"], ["user_id", 4], ["community_id", 20], ["created_at", "2021-04-23 16:50:33.192824"], ["updated_at", "2021-04-23 16:50:33.192824"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "ip_address", "user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "CCT"], ["content", "We're doing the CCT this weekend, everyone make sure to pack a bottle of water!"], ["ip_address", "3321:242:1370:f110:83a9:88a4:557b:9934"], ["user_id", 5], ["community_id", 17], ["created_at", "2021-04-23 16:50:33.195460"], ["updated_at", "2021-04-23 16:50:33.195460"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "content", "ip_address", "user_id", "community_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Telluride Bluegrass Festival"], ["content", "Finally rescheduled, who's coming with???"], ["ip_address", "9321:242:1670:f110:93a9:88a4:757b:2934"], ["user_id", 3], ["community_id", 18], ["created_at", "2021-04-23 16:50:33.197509"], ["updated_at", "2021-04-23 16:50:33.197509"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Sounds great!"], ["user_id", 4], ["post_id", 1], ["created_at", "2021-04-23 16:50:33.199859"], ["updated_at", "2021-04-23 16:50:33.199859"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "I can't make it :("], ["user_id", 2], ["post_id", 1], ["created_at", "2021-04-23 16:50:33.201831"], ["updated_at", "2021-04-23 16:50:33.201831"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "So cool!!!"], ["user_id", 1], ["post_id", 2], ["created_at", "2021-04-23 16:50:33.203835"], ["updated_at", "2021-04-23 16:50:33.203835"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Time to get my lazy butt in gear!"], ["user_id", 5], ["post_id", 3], ["created_at", "2021-04-23 16:50:33.205670"], ["updated_at", "2021-04-23 16:50:33.205670"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Better believe I'll be there!"], ["user_id", 2], ["post_id", 3], ["created_at", "2021-04-23 16:50:33.207573"], ["updated_at", "2021-04-23 16:50:33.207573"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Can't wait!"], ["user_id", 6], ["post_id", 3], ["created_at", "2021-04-23 16:50:33.209419"], ["updated_at", "2021-04-23 16:50:33.209419"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "We could probably do it in a day..."], ["user_id", 3], ["post_id", 4], ["created_at", "2021-04-23 16:50:33.211424"], ["updated_at", "2021-04-23 16:50:33.211424"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "Pumped!"], ["user_id", 2], ["post_id", 4], ["created_at", "2021-04-23 16:50:33.213527"], ["updated_at", "2021-04-23 16:50:33.213527"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "I can't contain my excitement."], ["user_id", 1], ["post_id", 5], ["created_at", "2021-04-23 16:50:33.215473"], ["updated_at", "2021-04-23 16:50:33.215473"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("content", "user_id", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["content", "HYFR"], ["user_id", 4], ["post_id", 5], ["created_at", "2021-04-23 16:50:33.217375"], ["updated_at", "2021-04-23 16:50:33.217375"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.1ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 1], ["user_id", 6], ["created_at", "2021-04-23 16:50:33.219591"], ["updated_at", "2021-04-23 16:50:33.219591"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.2ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 1], ["user_id", 2], ["created_at", "2021-04-23 16:50:33.221638"], ["updated_at", "2021-04-23 16:50:33.221638"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.3ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 2], ["user_id", 5], ["created_at", "2021-04-23 16:50:33.223926"], ["updated_at", "2021-04-23 16:50:33.223926"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.2ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 2], ["user_id", 1], ["created_at", "2021-04-23 16:50:33.226367"], ["updated_at", "2021-04-23 16:50:33.226367"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.2ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 3], ["user_id", 1], ["created_at", "2021-04-23 16:50:33.228313"], ["updated_at", "2021-04-23 16:50:33.228313"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.2ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 3], ["user_id", 5], ["created_at", "2021-04-23 16:50:33.230231"], ["updated_at", "2021-04-23 16:50:33.230231"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.2ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 3], ["user_id", 6], ["created_at", "2021-04-23 16:50:33.232261"], ["updated_at", "2021-04-23 16:50:33.232261"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.1ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 3], ["user_id", 2], ["created_at", "2021-04-23 16:50:33.234283"], ["updated_at", "2021-04-23 16:50:33.234283"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.1ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 4], ["user_id", 5], ["created_at", "2021-04-23 16:50:33.236136"], ["updated_at", "2021-04-23 16:50:33.236136"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.1ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 4], ["user_id", 3], ["created_at", "2021-04-23 16:50:33.237924"], ["updated_at", "2021-04-23 16:50:33.237924"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.1ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 4], ["user_id", 1], ["created_at", "2021-04-23 16:50:33.239745"], ["updated_at", "2021-04-23 16:50:33.239745"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.1ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 4], ["user_id", 4], ["created_at", "2021-04-23 16:50:33.241555"], ["updated_at", "2021-04-23 16:50:33.241555"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.3ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 5], ["user_id", 6], ["created_at", "2021-04-23 16:50:33.243371"], ["updated_at", "2021-04-23 16:50:33.243371"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.2ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 5], ["user_id", 1], ["created_at", "2021-04-23 16:50:33.252334"], ["updated_at", "2021-04-23 16:50:33.252334"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostLike Create (0.1ms)[0m  [1m[32mINSERT INTO "post_likes" ("post_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["post_id", 5], ["user_id", 4], ["created_at", "2021-04-23 16:50:33.254343"], ["updated_at", "2021-04-23 16:50:33.254343"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.1ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#games"], ["post_id", 1], ["created_at", "2021-04-23 16:50:33.256321"], ["updated_at", "2021-04-23 16:50:33.256321"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.1ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#zombicide"], ["post_id", 1], ["created_at", "2021-04-23 16:50:33.258288"], ["updated_at", "2021-04-23 16:50:33.258288"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.1ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#partyUP"], ["post_id", 2], ["created_at", "2021-04-23 16:50:33.260148"], ["updated_at", "2021-04-23 16:50:33.260148"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.1ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#RedRocks"], ["post_id", 2], ["created_at", "2021-04-23 16:50:33.262043"], ["updated_at", "2021-04-23 16:50:33.262043"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.1ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#SpartanRacePrep"], ["post_id", 3], ["created_at", "2021-04-23 16:50:33.263903"], ["updated_at", "2021-04-23 16:50:33.263903"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.1ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#TheCoreYouCantContain"], ["post_id", 3], ["created_at", "2021-04-23 16:50:33.265771"], ["updated_at", "2021-04-23 16:50:33.265771"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.2ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#MooveItMooveIt"], ["post_id", 3], ["created_at", "2021-04-23 16:50:33.267814"], ["updated_at", "2021-04-23 16:50:33.267814"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.2ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#SummerBod"], ["post_id", 4], ["created_at", "2021-04-23 16:50:33.270185"], ["updated_at", "2021-04-23 16:50:33.270185"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.1ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#AllDownhillFromHere"], ["post_id", 4], ["created_at", "2021-04-23 16:50:33.272126"], ["updated_at", "2021-04-23 16:50:33.272126"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.1ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#NoPainNoGain"], ["post_id", 4], ["created_at", "2021-04-23 16:50:33.273951"], ["updated_at", "2021-04-23 16:50:33.273951"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.1ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#GetDown"], ["post_id", 5], ["created_at", "2021-04-23 16:50:33.275751"], ["updated_at", "2021-04-23 16:50:33.275751"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPostTag Create (0.2ms)[0m  [1m[32mINSERT INTO "post_tags" ("tag_name", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["tag_name", "#Celebrate"], ["post_id", 5], ["created_at", "2021-04-23 16:50:33.277637"], ["updated_at", "2021-04-23 16:50:33.277637"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
