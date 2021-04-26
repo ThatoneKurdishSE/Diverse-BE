@@ -13,7 +13,12 @@ Supporting and building great connections and hobbies for everyone!
 
 ## General Info
 
-## GOAL:
+- Project was completed as part of the Flatiron School "Nurturing Difference" hackathon from 04/19/2021 - 04/26/2021
+- Trello was used for for Project Tracking
+- Lucidchart was used to create the ER-Diagram used to visualize Rails schema
+- Became a great learning experience for creating & managaging teams, as well as working with the Git VCS & GitHub project management capabilities
+
+## Goal
 
 - Create a safe space for people in marginalized or underrepresented communities,  particularly communities that are traditionally white-dominated
 
@@ -27,7 +32,7 @@ Supporting and building great connections and hobbies for everyone!
 
 ## Status
 
-MVP Achieved. 
+- MVP achieved, hoping to circle back in the future in order to further flesh out features & expand capabilities
 
 ## Technologies
 
