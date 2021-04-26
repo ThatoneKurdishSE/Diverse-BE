@@ -14,32 +14,46 @@ User.destroy_all
 @jeff = User.create username: "Jeff", age: 999, email: "jeff@gjeffgolden.com", password: "password"
 @obinna = User.create username: "Obinna", age: 23, email: "obinna@gjeffgolden.com", password: "password"
 
-@hiking = Community.create name: "Hiking", location: "Denver, CO", description: "A small community of hikers around Denver"
-@concerts = Community.create name: "Concerts", location: "Los Angeles, CA", description: "A medium-sized community of concert-goers around Los Angeles"
+@blackpackers = Community.create name: "Blackpackers", location: "Denver, CO", description: "A backpacking group for People of Color"
+@womenintech = Community.create name: "Women in Tech", location: "New York, NY", description: "Female-led React discussions"
 @board_games = Community.create name: "Board Games", location: "Seattle, WA", description: "A large community of board game players around Seattle"
-@jazzercise = Community.create name: "Jazzercise", location: "Portland, OR", description: "A medium-sized community of jazzercise around Portland"
+@gamers = Community.create name: "LGBTQ+ Gamers", location: "Phoenix, AZ", description: "Gamers of all types welcome"
+@edm = Community.create name: "EDM 4 ALL", location: "Portland, OR", description: "Good vibes only"
+@dnd = Community.create name: "Inclusive DnD", location: "Philadelphia, PA", description: "DnD games open to everyone"
+@concerts = Community.create name: "Concerts", location: "Los Angeles, CA", description: "A medium-sized community of concert-goers around Los Angeles"
+@writers = Community.create name: "Writers of Color", location: "San Francisco, CA", description: "A writing group for POC"
+@birders = Community.create name: "Latin Birders", location: "Houston, TX", description: "Discussions for birders with latin heritage"
+@hiking = Community.create name: "Hiking", location: "Denver, CO", description: "A small community of hikers around Denver"
+@bossladies = Community.create name: "Boss Ladies", location: "Nashville, TN", description: "A group for female managers and directors."
 
 UserCommunity.create user: @jack, community: @hiking
-UserCommunity.create user: @jack, community: @board_games
-UserCommunity.create user: @jack, community: @concerts
+UserCommunity.create user: @jack, community: @dnd
+UserCommunity.create user: @jack, community: @edm
 UserCommunity.create user: @ryan, community: @concerts
 UserCommunity.create user: @ryan, community: @board_games
-UserCommunity.create user: @raz, community: @hiking
-UserCommunity.create user: @raz, community: @jazzercise
+UserCommunity.create user: @raz, community: @bossladies
+UserCommunity.create user: @raz, community: @womenintech
 UserCommunity.create user: @raz, community: @board_games
-UserCommunity.create user: @stephen, community: @hiking
-UserCommunity.create user: @stephen, community: @concerts
-UserCommunity.create user: @stephen, community: @board_games
+UserCommunity.create user: @stephen, community: @writers
+UserCommunity.create user: @stephen, community: @edm
+UserCommunity.create user: @stephen, community: @dnd
 UserCommunity.create user: @jeff, community: @hiking
-UserCommunity.create user: @jeff, community: @concerts
-UserCommunity.create user: @obinna, community: @board_games
-UserCommunity.create user: @obinna, community: @concerts
-UserCommunity.create user: @obinna, community: @jazzercise
+UserCommunity.create user: @jeff, community: @birders
+UserCommunity.create user: @obinna, community: @blackpackers
+UserCommunity.create user: @obinna, community: @gamers
+UserCommunity.create user: @obinna, community: @writers
 
 CommunityOwner.create user: @jack, community: @board_games
 CommunityOwner.create user: @jeff, community: @hiking
-CommunityOwner.create user: @raz, community: @jazzercise
+CommunityOwner.create user: @raz, community: @womenintech
+CommunityOwner.create user: @obinna, community: @blackpackers
+CommunityOwner.create user: @jeff, community: @gamers
+CommunityOwner.create user: @jack, community: @edm
+CommunityOwner.create user: @jack, community: @dnd
 CommunityOwner.create user: @ryan, community: @concerts
+CommunityOwner.create user: @jeff, community: @writers
+CommunityOwner.create user: @jeff, community: @birders
+CommunityOwner.create user: @raz, community: @bossladies
 
 @board_game_night = Post.create user: @jack, community: @board_games, title: "Board Game Night", content: "Everybody come out this Tuesday for Board Game night at my place!", ip_address: "2651:262:1470:f170:85a6:58a4:557b:9199"
 @concert_night = Post.create user: @ryan, community: @concerts, title: "Illenium Concert", content: "Illenium this Friday at Red Rocks!", ip_address: "2651:262:1470:f170:85a9:88a4:557b:9199"
